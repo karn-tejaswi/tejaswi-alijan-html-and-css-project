@@ -24,20 +24,37 @@
     <script  src="js/index.js"></script>
     <h1>Hello WorldHello World, we are software developers!</h1>
     <h1 id="title">Survey Form</h1>
-      <p id="description">Please fill this form as a microvers user</p>
+<p id="description">Please fill this form as a microvers user</p>
 
-        <form id="survey-form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" required>
+<form id="survey-form">
+  <label for="name" id="name-label">Name:</label>
+  <input type="text" id="name" placeholder="Enter your name" required>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" required>
+  <label for="email" id="email-label">Email:</label>
+  <input type="email" id="email" placeholder="Enter your email" required>
 
-          <label for="number">Number:</label>
-          <input type="number" id="number" required>
+  <label for="number" id="number-label">Number:</label>
+  <input type="number" id="number" min="1" max="100" placeholder="Enter a number" required>
 
-          <input type="submit" value="Submit">
-        </form>
+  <label for="dropdown">Select an option:</label>
+  <select id="dropdown" required>
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+  </select>
+
+  <label>Select a radio button:</label>
+  <input type="radio" name="radio" value="radio1" required>Radio 1
+  <input type="radio" name="radio" value="radio2" required>Radio 2
+
+  <label>Select multiple checkboxes:</label>
+  <input type="checkbox" name="checkbox" value="checkbox1" required>Checkbox 1
+  <input type="checkbox" name="checkbox" value="checkbox2" required>Checkbox 2
+
+  <label for="comments">additional comments:</label>
+  <textarea id="comments"></textarea>
+
+  <input type="submit" id="submit" value="Submit">
+</form>
 
   </body>
 </html>
